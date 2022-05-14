@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PlayingCards",
+        "repositoryURL": "https://github.com/nashysolutions/PlayingCards.git",
+        "state": {
+          "branch": null,
+          "revision": "280029205d1cca814f43633f9690a9da39db2682",
+          "version": "2.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
