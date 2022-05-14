@@ -30,3 +30,4 @@ print(hand?.description ?? "Only able to parse card count 2...7.")
 ```
 
 Dependency: [PlayingCards](https://github.com/nashysolutions/PlayingCards)
+Demo: [Texas](https://github.com/nashysolutions/Texas)
