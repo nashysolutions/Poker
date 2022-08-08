@@ -4,12 +4,7 @@ import PlayingCards
 
 final class HighCardTests: XCTestCase {
     
-    private var deck: Deck!
-    
-    override func setUp() {
-        deck = Deck()
-        deck.shuffle()
-    }
+    private var deck = Deck()
     
 //    func testEvaluation() {
 //        var cards = deck.deal(cards: 3)

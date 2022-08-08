@@ -5,15 +5,13 @@ import PlayingCards
 final class DealTests: XCTestCase {
     
     func testTooFewCards() {
-        let deck = Deck()
-        deck.shuffle()
+        var deck = Deck()
         let cards = deck.deal(cards: 1)
         XCTAssertNil(Hand(cards: cards))
     }
     
     func testTooManyCards() {
-        let deck = Deck()
-        deck.shuffle()
+        var deck = Deck()
         let cards = deck.deal(cards: 8)
         XCTAssertNil(Hand(cards: cards))
     }

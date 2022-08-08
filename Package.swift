@@ -11,7 +11,7 @@ let package = Package(
             targets: ["Poker"]),
     ],
     dependencies: [
-        .package(name: "PlayingCards", url: "https://github.com/nashysolutions/PlayingCards.git", .upToNextMinor(from: "2.0.1"))
+        .package(name: "PlayingCards", url: "https://github.com/nashysolutions/PlayingCards.git", .upToNextMinor(from: "3.0.0"))
     ],
     targets: [
         .target(
