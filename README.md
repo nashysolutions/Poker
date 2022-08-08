@@ -7,7 +7,12 @@
 
 Maps a collection of cards to a poker hand, based on the rules of [Texas hold'em](https://en.wikipedia.org/wiki/Texas_hold_%27em).
 
+* Dependency: [PlayingCards](https://github.com/nashysolutions/PlayingCards)
+* Demo: [Texas](https://github.com/nashysolutions/Texas)
+
 ```swift
+import PlayingCards
+
 let cards: [PlayingCard]
 let hand: Hand? = Hand(cards: cards)
 
@@ -28,6 +33,3 @@ enum Hand: Comparable {
 
 print(hand?.description ?? "Only able to parse card count 2...7.")
 ```
-
-* Dependency: [PlayingCards](https://github.com/nashysolutions/PlayingCards)
-* Demo: [Texas](https://github.com/nashysolutions/Texas)
