@@ -20,101 +20,101 @@ extension Score {
     
     private var highCardExample: [PlayingCard] {
         return [
-            HeartCard(rank: .two),
-            SpadeCard(rank: .five),
-            DiamondCard(rank: .three),
-            ClubCard(rank: .nine),
-            DiamondCard(rank: .king)
+            PlayingCard(rank: .two, suit: .hearts),
+            PlayingCard(rank: .five, suit: .spades),
+            PlayingCard(rank: .three, suit: .diamonds),
+            PlayingCard(rank: .nine, suit: .clubs),
+            PlayingCard(rank: .king, suit: .diamonds)
         ]
     }
     
     private var pairExample: [PlayingCard] {
         return [
-            HeartCard(rank: .two),
-            SpadeCard(rank: .five),
-            DiamondCard(rank: .two),
-            ClubCard(rank: .nine),
-            DiamondCard(rank: .king)
+            PlayingCard(rank: .two, suit: .hearts),
+            PlayingCard(rank: .five, suit: .spades),
+            PlayingCard(rank: .two, suit: .diamonds),
+            PlayingCard(rank: .nine, suit: .clubs),
+            PlayingCard(rank: .king, suit: .diamonds)
         ]
     }
     
     private var twoPairExample: [PlayingCard] {
         return [
-            HeartCard(rank: .two),
-            ClubCard(rank: .king),
-            DiamondCard(rank: .two),
-            ClubCard(rank: .nine),
-            DiamondCard(rank: .king)
+            PlayingCard(rank: .two, suit: .hearts),
+            PlayingCard(rank: .king, suit: .clubs),
+            PlayingCard(rank: .two, suit: .diamonds),
+            PlayingCard(rank: .nine, suit: .clubs),
+            PlayingCard(rank: .king, suit: .diamonds)
         ]
     }
     
     private var threeKindExample: [PlayingCard] {
         return [
-            HeartCard(rank: .two),
-            ClubCard(rank: .king),
-            DiamondCard(rank: .two),
-            ClubCard(rank: .nine),
-            ClubCard(rank: .two)
+            PlayingCard(rank: .two, suit: .hearts),
+            PlayingCard(rank: .king, suit: .clubs),
+            PlayingCard(rank: .two, suit: .diamonds),
+            PlayingCard(rank: .nine, suit: .clubs),
+            PlayingCard(rank: .two, suit: .clubs)
         ]
     }
     
     private var straightExample: [PlayingCard] {
         return [
-            HeartCard(rank: .two),
-            ClubCard(rank: .three),
-            DiamondCard(rank: .four),
-            HeartCard(rank: .six),
-            SpadeCard(rank: .five)
+            PlayingCard(rank: .two, suit: .hearts),
+            PlayingCard(rank: .three, suit: .spades),
+            PlayingCard(rank: .four, suit: .diamonds),
+            PlayingCard(rank: .six, suit: .hearts),
+            PlayingCard(rank: .five, suit: .spades)
         ]
     }
     
     private var fourKindExample: [PlayingCard] {
         return [
-            HeartCard(rank: .seven),
-            SpadeCard(rank: .queen),
-            SpadeCard(rank: .seven),
-            DiamondCard(rank: .seven),
-            ClubCard(rank: .seven)
+            PlayingCard(rank: .seven, suit: .hearts),
+            PlayingCard(rank: .queen, suit: .spades),
+            PlayingCard(rank: .seven, suit: .spades),
+            PlayingCard(rank: .seven, suit: .diamonds),
+            PlayingCard(rank: .seven, suit: .clubs)
         ]
     }
     
     private var flushExample: [PlayingCard] {
         return [
-            HeartCard(rank: .two),
-            HeartCard(rank: .nine),
-            HeartCard(rank: .jack),
-            HeartCard(rank: .six),
-            HeartCard(rank: .seven)
+            PlayingCard(rank: .two, suit: .hearts),
+            PlayingCard(rank: .nine, suit: .hearts),
+            PlayingCard(rank: .jack, suit: .hearts),
+            PlayingCard(rank: .six, suit: .hearts),
+            PlayingCard(rank: .seven, suit: .hearts)
         ]
     }
     
     private var fullHouseExample: [PlayingCard] {
         return [
-            HeartCard(rank: .two),
-            HeartCard(rank: .nine),
-            SpadeCard(rank: .two),
-            SpadeCard(rank: .nine),
-            DiamondCard(rank: .nine)
+            PlayingCard(rank: .two, suit: .hearts),
+            PlayingCard(rank: .nine, suit: .hearts),
+            PlayingCard(rank: .two, suit: .spades),
+            PlayingCard(rank: .nine, suit: .spades),
+            PlayingCard(rank: .nine, suit: .diamonds)
         ]
     }
     
     private var straightFlushExample: [PlayingCard] {
         return [
-            HeartCard(rank: .three),
-            HeartCard(rank: .six),
-            HeartCard(rank: .two),
-            HeartCard(rank: .four),
-            HeartCard(rank: .five)
+            PlayingCard(rank: .three, suit: .hearts),
+            PlayingCard(rank: .six, suit: .hearts),
+            PlayingCard(rank: .two, suit: .hearts),
+            PlayingCard(rank: .four, suit: .hearts),
+            PlayingCard(rank: .five, suit: .hearts)
         ]
     }
     
     private var royalFlushExample: [PlayingCard] {
         return [
-            HeartCard(rank: .ten),
-            HeartCard(rank: .jack),
-            HeartCard(rank: .queen),
-            HeartCard(rank: .king),
-            HeartCard(rank: .ace)
+            PlayingCard(rank: .ten, suit: .hearts),
+            PlayingCard(rank: .jack, suit: .hearts),
+            PlayingCard(rank: .queen, suit: .hearts),
+            PlayingCard(rank: .king, suit: .hearts),
+            PlayingCard(rank: .ace, suit: .hearts)
         ]
     }
 }

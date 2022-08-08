@@ -9,19 +9,19 @@ struct Assessment: Comparable, CustomStringConvertible {
     var description: String {
         switch score {
         case .highCard:
-            return score.description + " - " + highestRank.description.capitalized
+            return score.description + " - " + highestRank.rawValue.capitalized
         case .pair:
-            return "Pocket " + highestRank.description.capitalized + "'s"
+            return "Pocket " + highestRank.rawValue.capitalized + "'s"
         case .fourKind:
-            return score.description + " - " + highestRank.description.capitalized + "'s"
+            return score.description + " - " + highestRank.rawValue.capitalized + "'s"
         case .flush:
             return score.description
         case .threeKind:
-            return score.description + " - " + highestRank.description.capitalized + "'s"
+            return score.description + " - " + highestRank.rawValue.capitalized + "'s"
         case .royalFlush:
             return score.description
         default:
-            return score.description + " - " + highestRank.description.capitalized + " High"
+            return score.description + " - " + highestRank.rawValue.capitalized + " High"
         }
     }
     

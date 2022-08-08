@@ -19,12 +19,12 @@ final class AssessorTests: XCTestCase {
     
     func testIsLower() {
         let hand1 = Assessor(cards:[
-            ClubCard(rank: .nine),
-            ClubCard(rank: .eight)
+            PlayingCard(rank: .nine, suit: .clubs),
+            PlayingCard(rank: .eight, suit: .clubs)
         ])
         let hand2 = Assessor(cards: [
-            HeartCard(rank: .queen),
-            ClubCard(rank: .king)
+            PlayingCard(rank: .queen, suit: .hearts),
+            PlayingCard(rank: .king, suit: .clubs)
         ])
         XCTAssertTrue(hand1.isLower(than: hand2))
     }

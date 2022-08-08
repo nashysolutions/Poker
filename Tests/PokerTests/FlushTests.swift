@@ -21,13 +21,13 @@ final class FlushTests: XCTestCase {
     
     func testRiver() {
         var cards = [
-            ClubCard(rank: .four),
-            ClubCard(rank: .ace),
-            ClubCard(rank: .five),
-            ClubCard(rank: .two),
-            ClubCard(rank: .three),
-            ClubCard(rank: .seven),
-            ClubCard(rank: .six)
+            PlayingCard(rank: .four, suit: .clubs),
+            PlayingCard(rank: .ace, suit: .clubs),
+            PlayingCard(rank: .five, suit: .clubs),
+            PlayingCard(rank: .two, suit: .clubs),
+            PlayingCard(rank: .three, suit: .clubs),
+            PlayingCard(rank: .seven, suit: .clubs),
+            PlayingCard(rank: .six, suit: .clubs)
         ]
         cards.sort()
         let assessment = FlushAssessor(cards: cards)
